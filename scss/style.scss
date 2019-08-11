@@ -77,7 +77,7 @@ a {
 			color: $white;
 		}
 	}
-
+	
 	&.bg-light {
 		background: transparent!important;
 		@include media-breakpoint-down(md) {
@@ -122,15 +122,19 @@ a {
 				@include media-breakpoint-down(md) {
 					color: rgba(0,0,0,.7)!important;
 				}
+		
+				
 				
 			}
 		}
+	
 		&.active {
 			> a {
 				color: $primary!important;
 			}
 		}
 	}
+
 
 	
 	
