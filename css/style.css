@@ -1,9 +1,9 @@
 body {
   background: #fff;
   color: #798a9a;
-  line-height: 1.7;
-  font-size: 16px;
-  font-weight: 300; }
+  line-height: 1.8;
+  font-size: 18px;
+  font-weight: 500; }
 
 .p1-gradient-bg, .thumb .overlay-bg {
   background: -moz-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
@@ -217,7 +217,7 @@ a {
     transform: translateX(-50%); }
 
 .lead {
-  font-weight: 200;
+  font-weight: 500;
   line-height: 1.5; }
 
 .site-service-item .icon {
