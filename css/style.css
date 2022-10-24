@@ -237,11 +237,11 @@ a:active {
 }
 
 .site-section {
-  padding: 5em 0;
+  padding: 2.5em 0;
 }
 
 .section-heading {
-  margin-bottom: 30px;
+  margin-bottom: 50px;
   position: relative;
   z-index: 10;
 }
@@ -704,7 +704,7 @@ a:active {
 }
 
 .site-footer {
-  padding: 3em 0;
+  padding: 1em 0;
 }
 .site-footer p:last-child {
   margin-bottom: 0;
