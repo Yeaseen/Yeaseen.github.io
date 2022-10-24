@@ -5,6 +5,89 @@ body {
   font-size: 16px;
   font-weight: 500;
 }
+
+.special-btn > a{
+}
+.special-btn > a:hover{
+}
+.special-btn > a:active{
+}
+
+.special-btn .btn {
+  border-radius: 10px;
+  font-size: 15px;
+    font-weight: 500;
+  letter-spacing: 0.1em;
+   padding: 0px;
+   min-height: 5px; 
+    min-width: 60px;
+    border-width: 2px ;
+}
+.special-btn .btn:active,
+.btn:focus {
+  outline: none;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+}
+
+
+
+.btn.btn-primary {
+  color: #fff;
+}
+.btn.btn-primary:hover,
+.btn.btn-primary:active,
+.btn.btn-primary:focus {
+  background: #4ebe2a;
+}
+
+
+
+
+/*
+code for creating a button
+.special-btn > a{
+}
+.special-btn > a:hover{
+}
+.special-btn > a:active{
+}
+.special-btn .mybtn {
+    font-size: 15px;
+    font-weight: 500;
+    top:50%;
+    background-color:white;
+    color: blue;
+    border-color: blue;
+    border-radius:10px;
+    padding: 0px;
+    min-height: 5px; 
+    min-width: 60px;
+}
+
+.special-btn .mybtn:hover {
+      background-color:blue;
+      color: white;
+      border-color: blue;
+      transition: 0.7s;
+  }
+
+.special-btn .mybtn:focus {
+    background-color:#ffbf00;
+    color: blue;
+    border-color: blue;
+  }
+
+.special-btn .mybtn:active {
+      background-color:#ffbf00;
+    color: blue;
+    border-color: blue;
+  }
+*/
+
+
+
+
 .p1-gradient-bg,
 .thumb .overlay-bg {
   background: -moz-linear-gradient(0deg, #8490ff 0%, #62bdfc 100%);
@@ -114,7 +197,7 @@ a:active {
 .site-navbar .navbar-nav > li > a:hover {
   color: #57d131 !important;
 }
-.site-navbar .navbar-nav > li > a.active {
+.site-navbar .navbar-nav > li > a:active {
   color: #57d131 !important;
 }
 
@@ -343,25 +426,7 @@ a:active {
   content: '\ebd3';
 }
 
-.btn {
-  border-radius: 100px;
-  text-transform: uppercase;
-  letter-spacing: 0.1em;
-}
-.btn:active,
-.btn:focus {
-  outline: none;
-  -webkit-box-shadow: none !important;
-  box-shadow: none !important;
-}
-.btn.btn-primary {
-  color: #fff;
-}
-.btn.btn-primary:hover,
-.btn.btn-primary:active,
-.btn.btn-primary:focus {
-  background: #4ebe2a;
-}
+
 
 .progress {
   overflow: visible;
