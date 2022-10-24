@@ -34,11 +34,15 @@ body {
 
 .btn.btn-primary {
   color: #fff;
+  background: #17a2b8;
+  border-color: #17a2b8;
+  border-radius: 100px;
 }
 .btn.btn-primary:hover,
 .btn.btn-primary:active,
 .btn.btn-primary:focus {
-  background: #4ebe2a;
+  background: #17a2b8;
+  border-color: #17a2b8;
 }
 
 
