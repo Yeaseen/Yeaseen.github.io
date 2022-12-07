@@ -3,7 +3,7 @@ body {
   color: #798a9a;
   line-height: 1.5;
   font-size: 16px;
-  font-weight: 500;
+  font-weight: 600;
 }
 
 .special-btn > a{
@@ -135,7 +135,8 @@ a {
   -webkit-transition: 0.3s all;
   -o-transition: 0.3s all;
   transition: 0.3s all;
-  color: #57d131;
+  /* color: #57d131; */
+  color: red;
 }
 a:hover,
 a:focus,
@@ -200,10 +201,12 @@ a:active {
   letter-spacing: 0.2em;
 }
 .site-navbar .navbar-nav > li > a.hover {
-  color: #57d131 !important;
+  /* color: #57d131 !important; */
+  color: red !important;
 }
 .site-navbar .navbar-nav > li > a.active {
-  color: #57d131 !important;
+  /* color: #57d131 !important; */
+  color: red !important;
 }
 
 @media (max-width: 991.98px) {
@@ -212,7 +215,9 @@ a:active {
   }
 }
 .site-navbar .navbar-nav.active > a {
-  color: #57d131 !important;
+  
+  /* color: #57d131 !important; */
+  color: red !important;
 }
 
 .site-navbar.scrolled {
@@ -262,10 +267,14 @@ a:active {
   color: rgba(0, 0, 0, 0.7) !important;
 }
 .site-navbar.scrolled .navbar-nav > li > a.hover {
-  color: #57d131 !important;
+  
+  /* color: #57d131 !important; */
+  color: red !important;
 }
 .site-navbar.scrolled .navbar-nav > li > a.active {
-  color: #57d131 !important;
+ 
+  /* color: #57d131 !important; */
+  color: red !important;
 }
 
 
@@ -345,7 +354,9 @@ a:active {
   left: 0;
   height: 2px;
   width: 50px;
-  background: #57d131;
+  
+  /* background: #57d131; */
+  background: red;
   z-index: -1;
 }
 .section-heading.text-center h2:before {
@@ -364,7 +375,8 @@ a:active {
   display: block;
   margin-bottom: 50px;
   background: #edf0f2;
-  background: #57d131;
+  /* background: #57d131; */
+  background: red;
   width: 100px;
   height: 100px;
   position: relative;
@@ -422,7 +434,9 @@ a:active {
   padding-left: 30px;
 }
 .site-list li.site-check:before {
-  color: #57d131;
+ 
+  /* color: #57d131; */
+  color: red;
   font-size: 16px;
   content: '\ebd3';
 }
@@ -509,7 +523,7 @@ a:active {
   color: #cccccc;
 }
 
-/*--------- Start Portfolio Area -------------*/
+/*--------- #57d131 Start Portfolio Area -------------*/
 .portfolio-area .primary-btn {
   color: #fff;
   background-color: #57d131;
@@ -669,14 +683,14 @@ a:active {
 .resume-item {
   padding: 40px;
   background: #fff;
-  -webkit-transition: 0.3s all ease;
-  -o-transition: 0.3s all ease;
-  transition: 0.3s all ease;
+  -webkit-transition: 0.1s all ease;
+  -o-transition: 0.1s all ease;
+  transition: 0.1s all ease;
   border: 4px solid transparent;
 }
 .resume-item:hover,
 .resume-item:focus {
-  border: 4px solid #57d131;
+  border: 4px solid red;
   -webkit-box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.1);
 }
