@@ -6,6 +6,139 @@ body {
   font-weight: 600;
 }
 
+
+
+
+
+/* start of timeline */ 
+* {
+  box-sizing: border-box;
+}
+
+
+
+.tl {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tl::after {
+  content: "";
+  position: absolute;
+  width: 6px;
+  background-color: #fff;
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.tl-container {
+  padding: 10px 40px;
+  position: relative;
+  background-color: inherit;
+  width: 50%;
+}
+
+.tl-container::after {
+  content: "";
+  position: absolute;
+  width: 25px;
+  height: 25px;
+  right: -17px;
+  background-color: #fff;
+  border: 4px solid #ff9f55;
+  top: 15px;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.tl-left {
+  left: 0;
+}
+
+.tl-right {
+  left: 50%;
+}
+
+.tl-left::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  right: 30px;
+  border: medium solid #fff;
+  border-width: 10px 0 10px 10px;
+  border-color: transparent transparent transparent #fff;
+}
+
+.tl-right::before {
+  content: " ";
+  height: 0;
+  position: absolute;
+  top: 22px;
+  width: 0;
+  z-index: 1;
+  left: 30px;
+  border: medium solid #fff;
+  border-width: 10px 10px 10px 0;
+  border-color: transparent #fff transparent transparent;
+}
+
+.tl-right::after {
+  left: -16px;
+}
+
+.tl-content {
+  padding: 15px 30px;
+  background-color: #fff;
+  position: relative;
+  border-radius: 6px;
+}
+
+.tl-content .date {
+    margin-top: -5px;
+    margin-bottom: 15px;
+    color: #6c757d;
+}
+
+
+@media screen and (max-width: 600px) {
+  .tl::after {
+    left: 31px;
+  }
+
+  .tl-container {
+    width: 100%;
+    padding-left: 70px;
+    padding-right: 25px;
+  }
+
+  .tl-container::before {
+    left: 60px;
+    border: medium solid #fff;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent #fff transparent transparent;
+  }
+
+  .tl-left::after,
+  .tl-right::after {
+    left: 15px;
+  }
+
+  .tl-right {
+    left: 0%;
+  }
+}
+
+
+/* end of timeline */ 
+
+
+
 .special-btn > a{
 }
 .special-btn > a:hover{
@@ -136,12 +269,12 @@ a {
   -o-transition: 0.3s all;
   transition: 0.3s all;
   /* color: #57d131; */
-  color: red;
+  color: #ff9f55;
 }
 a:hover,
 a:focus,
 a:active {
-  color: #4ebe2a;
+  color: #ff9f55;
   text-decoration: none;
 }
 
@@ -202,11 +335,11 @@ a:active {
 }
 .site-navbar .navbar-nav > li > a.hover {
   /* color: #57d131 !important; */
-  color: red !important;
+  color: #ff9f55 !important;
 }
 .site-navbar .navbar-nav > li > a.active {
   /* color: #57d131 !important; */
-  color: red !important;
+  color: #ff9f55 !important;
 }
 
 @media (max-width: 991.98px) {
@@ -217,7 +350,7 @@ a:active {
 .site-navbar .navbar-nav.active > a {
   
   /* color: #57d131 !important; */
-  color: red !important;
+  color: #ff9f55 !important;
 }
 
 .site-navbar.scrolled {
@@ -269,12 +402,12 @@ a:active {
 .site-navbar.scrolled .navbar-nav > li > a.hover {
   
   /* color: #57d131 !important; */
-  color: red !important;
+  color: #ff9f55 !important;
 }
 .site-navbar.scrolled .navbar-nav > li > a.active {
  
   /* color: #57d131 !important; */
-  color: red !important;
+  color: #ff9f55 !important;
 }
 
 
@@ -356,7 +489,7 @@ a:active {
   width: 50px;
   
   /* background: #57d131; */
-  background: red;
+  background: #ff9f55;
   z-index: -1;
 }
 .section-heading.text-center h2:before {
@@ -376,7 +509,7 @@ a:active {
   margin-bottom: 50px;
   background: #edf0f2;
   /* background: #57d131; */
-  background: red;
+  background: #ff9f55;
   width: 100px;
   height: 100px;
   position: relative;
@@ -436,7 +569,7 @@ a:active {
 .site-list li.site-check:before {
  
   /* color: #57d131; */
-  color: red;
+  color: #ff9f55;
   font-size: 16px;
   content: '\ebd3';
 }
@@ -691,7 +824,7 @@ a:active {
 }
 .resume-item:hover,
 .resume-item:focus {
-  border: 4px solid red;
+  border: 4px solid #ff9f55;
   -webkit-box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.1);
 }
@@ -833,7 +966,7 @@ a:active {
 }
 .block-47 .block-47-quote:before {
   content: '';
-  border: 1px solid red;
+  border: 1px solid #ff9f55;
   z-index: 2;
   position: absolute;
   left: -15px;
