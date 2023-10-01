@@ -323,6 +323,8 @@ a:active {
     color: #000;
   }
 }
+
+
 .site-navbar .navbar-nav > li > a {
   color: #fff !important;
   font-size: 14px;
@@ -346,9 +348,11 @@ a:active {
   .site-navbar .navbar-nav > li > a {
     color: rgba(0, 0, 0, 0.7) !important;
   }
+
 }
-.site-navbar .navbar-nav.active > a {
-  
+
+
+.site-navbar .navbar-nav.active > a { 
   /* color: #57d131 !important; */
   color: #ff9f55 !important;
 }
@@ -409,6 +413,9 @@ a:active {
   /* color: #57d131 !important; */
   color: #ff9f55 !important;
 }
+
+
+
 
 
 
