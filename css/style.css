@@ -476,6 +476,9 @@ a:active {
   transform: translateX(-50%);
 }
 
+.timezone {
+  font-family: monospace;
+}
 .lead h3,
 h4 {
   text-align: justify;
