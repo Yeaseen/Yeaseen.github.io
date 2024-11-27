@@ -259,134 +259,74 @@ a:active {
   text-decoration: none;
 }
 
-.parent-nav-link-padding,
-.site-navbar .navbar-nav > li > a {
-  padding: 15px 20px !important;
+html {
+  overflow-y: scroll; /* Always shows the vertical scrollbar */
 }
-
 .site-navbar {
-  border: none;
-  -webkit-box-shadow: none;
-  box-shadow: none;
+  background: #fff;
+  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.09);
+  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.09);
   border-radius: 0px;
-  margin-bottom: 0px;
-  background: none;
-  position: absolute;
-  top: 20px;
+  position: fixed;
+  top: 0px;
+  left: 0; /* Ensure it covers the full width */
+  right: 0;
   width: 100%;
   z-index: 200;
-  background: #fff;
 }
+
 .site-navbar .navbar-brand {
   display: inline-block;
-  border: 2px solid #fff;
+  border: 2px solid black;
   padding: 5px 20px;
-  color: #fff;
+  color: black;
   text-transform: uppercase;
   letter-spacing: 0.2em;
 }
+
 .site-navbar .navbar-brand:hover {
-  color: #fff;
-}
-.site-navbar.bg-light {
-  background: transparent !important;
-}
-@media (max-width: 991.98px) {
-  .site-navbar.bg-light {
-    background: #fff !important;
-    top: 0;
-  }
-  .site-navbar.bg-light .navbar-brand {
-    display: inline-block;
-    font-size: 18px;
-    border: 2px solid #000;
-    padding: 2px 10px !important;
-    color: #000;
-  }
+  color: black;
 }
 
 .site-navbar .navbar-nav > li > a {
-  color: #fff !important;
+  color: rgba(0, 0, 0, 0.7);
   font-size: 14px;
   font-weight: 500;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.2em; /* consolidated the letter-spacing */
   position: relative;
   text-transform: uppercase;
-
-  letter-spacing: 0.2em;
+  padding: 15px 20px; /* moved from separate class */
 }
+
+.site-navbar .navbar-nav > li > a.active,
 .site-navbar .navbar-nav > li > a.hover {
-  /* color: #57d131 !important; */
-  color: #ff9f55 !important;
-}
-.site-navbar .navbar-nav > li > a.active {
-  /* color: #57d131 !important; */
-  color: #ff9f55 !important;
-}
-
-@media (max-width: 991.98px) {
-  .site-navbar .navbar-nav > li > a {
-    color: rgba(0, 0, 0, 0.7) !important;
-  }
-}
-
-.site-navbar .navbar-nav.active > a {
-  /* color: #57d131 !important; */
-  color: #ff9f55 !important;
+  /* combined hover and active for simplicity */
+  color: #ff9f55 !important; /* consistent color for active or hover state */
 }
 
 .site-navbar.scrolled {
   background: #fff;
-  -webkit-box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.09);
-  box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.09);
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  width: 100%;
-  -webkit-transform: translateY(-100%);
-  -ms-transform: translateY(-100%);
-  transform: translateY(-100%);
-}
-.site-navbar.scrolled.bg-light {
-  background: #fff !important;
-}
-.site-navbar.scrolled .navbar-brand {
-  display: inline-block;
-  font-size: 18px;
-  border: 2px solid #000;
-  padding: 2px 10px !important;
 }
 
-.site-navbar.scrolled.awake {
-  -webkit-transform: translateY(0%);
-  -ms-transform: translateY(0%);
-  transform: translateY(0%);
-  background: #fff !important;
-}
-.site-navbar.scrolled.sleep {
-  -webkit-transform: translateY(0%);
-  -ms-transform: translateY(0%);
-  transform: translateY(0%);
-  background: #fff !important;
-}
-
-.site-navbar.scrolled .navbar-brand {
-  color: #000;
-}
-.site-navbar.scrolled .dropdown > a:before {
-  color: rgba(0, 0, 0, 0.4);
-}
+.site-navbar.scrolled .navbar-brand,
 .site-navbar.scrolled .navbar-nav > li > a {
-  color: rgba(0, 0, 0, 0.7) !important;
+  color: rgba(0, 0, 0, 0.7); /* Ensure consistency */
 }
-.site-navbar.scrolled .navbar-nav > li > a.hover {
-  /* color: #57d131 !important; */
-  color: #ff9f55 !important;
+
+@media (max-width: 991.98px) {
+  .site-navbar .navbar-brand {
+    font-size: 18px; /* Responsive font size */
+    padding: 2px 10px;
+  }
+
+  .site-navbar .navbar-nav > li > a {
+    padding: 10px 15px; /* Smaller padding on mobile */
+  }
 }
-.site-navbar.scrolled .navbar-nav > li > a.active {
-  /* color: #57d131 !important; */
-  color: #ff9f55 !important;
+
+.site-section {
+  margin-top: 70px;
+  padding: 2.5em 0;
 }
 
 .site-hero {
@@ -437,10 +377,6 @@ a:active {
   max-width: 640px;
   margin: 0 auto;
   color: rgba(255, 255, 255, 0.5);
-}
-
-.site-section {
-  padding: 2.5em 0;
 }
 
 .section-heading {
@@ -868,16 +804,46 @@ h4 {
   display: block;
 }
 
+.img-profile {
+  width: 150px; /* Smaller and equal width and height make it circular */
+  height: 150px;
+  border-radius: 50%; /* Makes the image circular */
+  object-fit: cover; /* Ensures the image covers the area without distorting aspect ratio */
+  display: block; /* Ensures the image is block level to center correctly */
+  margin: 0 auto 20px; /* Centers the image and adds space below */
+}
+
+.profile-info h3 {
+  font-size: 1.2em; /* Adjust the font size as needed */
+  text-align: center; /* Center aligns the text */
+  margin: 0.5em 0; /* Adds top and bottom margin */
+  color: #333; /* Dark gray for better readability, adjust as needed */
+}
+
+.profile-info p {
+  font-size: 0.9em; /* Regular paragraph font size */
+  text-align: center; /* Center aligns the text */
+  margin: 0.25em 0; /* Small margins for a compact look */
+  color: #666; /* Lighter text color, adjust based on preference */
+}
+
+.profile-info p a {
+  font-size: 0.6em;
+  text-decoration: none; /* Removes underline from the link */
+}
+
 .site-footer {
   padding: 1em 0;
+  width: 100%;
 }
 .site-footer p:last-child {
   margin-bottom: 0;
 }
+
 .site-footer .social-item {
   display: inline-block;
-  width: 60px;
-  height: 60px;
+  width: 30px;
+  height: 30px;
   border: 1px solid #b3bdc6;
   position: relative;
   border-radius: 50%;
