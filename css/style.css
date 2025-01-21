@@ -127,6 +127,15 @@ body {
   }
 }
 
+.badgePR i {
+  color: purple; /* Change color according to your design */
+  margin-right: 10px; /* Space between icon and text */
+}
+.badge i {
+  color: red; /* Change color according to your design */
+  margin-right: 5px; /* Space between icon and text */
+}
+
 /* end of timeline */
 
 .special-btn > a {

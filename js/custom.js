@@ -31,41 +31,44 @@
     }
   }
 
-  // navigation
+  
   var OnePageNav = function () {
-    var navToggler = $('.navbar-toggler')
+    var navToggler = $('.navbar-toggler');
 
-    // Remove 'active' class from all links and then add to the clicked one
-    $("#pb-navbar ul li a[href^='#']").on('click', function (e) {
-      e.preventDefault()
+    $("a[href^='#']").on('click', function (e) {
+        e.preventDefault();
 
-      // Hide all sections
-      $('.site-section').hide()
+        var targetSection = $(this).attr('href'); // Get the target section ID from the href attribute
 
-      // Get the target section from the href attribute
-      var targetSection = $(this).attr('href')
-      $(targetSection).show() // Show the target section
+        $('.site-section').hide(); // Hide all sections
+        $(targetSection).show(); // Show the targeted section
 
-      // Handle active class for current item
-      $('#pb-navbar ul li a').removeClass('active') // Remove active from all links
-      $(this).addClass('active') // Add active to the clicked link
+        // Update the URL in the address bar
+        window.history.pushState({ path: targetSection }, '', targetSection);
 
-      // This is for the mobile navbar - it closes the navbar when an item is clicked
-      if (navToggler.is(':visible')) {
-        navToggler.click()
-      }
-    })
+        // Manage active class for navbar links
+        $('#pb-navbar ul li a').removeClass('active');
+        $('#pb-navbar ul li a[href="' + targetSection + '"]').addClass('active');
 
-    // Optional: remove the hash from URL
-    $('body').on('activate.bs.scrollspy', function () {
-      history.pushState(
-        '',
-        document.title,
-        window.location.pathname + window.location.search
-      )
-    })
-  }
+        // Close the navbar on mobile after clicking
+        if (navToggler.is(':visible')) {
+            navToggler.click();
+        }
+    });
 
+    // Optional: Could be used for handling browser back and forward buttons
+    $(window).on('popstate', function () {
+        var activePath = window.location.hash;
+        var activeSection = $(activePath);
+
+        $('.site-section').hide(); // Hide all sections
+        if (activeSection.length) {
+            activeSection.show(); // Show the section from the URL hash
+        } else {
+            $('#section-home').show(); // Default to home if the hash is undefined or section does not exist
+        }
+    });
+};
   /*----------------------------------------
 		Animate Scroll
 	----------------------------------------*/
