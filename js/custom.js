@@ -31,44 +31,43 @@
     }
   }
 
-  
   var OnePageNav = function () {
-    var navToggler = $('.navbar-toggler');
+    var navToggler = $('.navbar-toggler')
 
     $("a[href^='#']").on('click', function (e) {
-        e.preventDefault();
+      e.preventDefault()
 
-        var targetSection = $(this).attr('href'); // Get the target section ID from the href attribute
+      var targetSection = $(this).attr('href') // Get the target section ID from the href attribute
 
-        $('.site-section').hide(); // Hide all sections
-        $(targetSection).show(); // Show the targeted section
+      $('.site-section').hide() // Hide all sections
+      $(targetSection).show() // Show the targeted section
 
-        // Update the URL in the address bar
-        window.history.pushState({ path: targetSection }, '', targetSection);
+      // Update the URL in the address bar
+      window.history.pushState({ path: targetSection }, '', targetSection)
 
-        // Manage active class for navbar links
-        $('#pb-navbar ul li a').removeClass('active');
-        $('#pb-navbar ul li a[href="' + targetSection + '"]').addClass('active');
+      // Manage active class for navbar links
+      $('#pb-navbar ul li a').removeClass('active')
+      $('#pb-navbar ul li a[href="' + targetSection + '"]').addClass('active')
 
-        // Close the navbar on mobile after clicking
-        if (navToggler.is(':visible')) {
-            navToggler.click();
-        }
-    });
+      // Close the navbar on mobile after clicking
+      if (navToggler.is(':visible')) {
+        navToggler.click()
+      }
+    })
 
     // Optional: Could be used for handling browser back and forward buttons
     $(window).on('popstate', function () {
-        var activePath = window.location.hash;
-        var activeSection = $(activePath);
+      var activePath = window.location.hash
+      var activeSection = $(activePath)
 
-        $('.site-section').hide(); // Hide all sections
-        if (activeSection.length) {
-            activeSection.show(); // Show the section from the URL hash
-        } else {
-            $('#section-home').show(); // Default to home if the hash is undefined or section does not exist
-        }
-    });
-};
+      $('.site-section').hide() // Hide all sections
+      if (activeSection.length) {
+        activeSection.show() // Show the section from the URL hash
+      } else {
+        $('#section-home').show() // Default to home if the hash is undefined or section does not exist
+      }
+    })
+  }
   /*----------------------------------------
 		Animate Scroll
 	----------------------------------------*/
