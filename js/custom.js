@@ -315,9 +315,9 @@
 
   $(function () {
     // Hide all sections except for 'section-home' on initial load
-    $('.site-section').hide() // First hide all sections
-    $('#section-home').show() // Then show only the 'section-home'
-    OnePageNav()
+    //$('.site-section').hide() // First hide all sections
+    //$('#section-home').show() // Then show only the 'section-home'
+    //OnePageNav()
 
     contentWayPoint()
     navbarState()
