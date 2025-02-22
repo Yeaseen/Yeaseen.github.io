@@ -107,13 +107,14 @@ body {
 
 .special-btn .btn {
   border-radius: 10px;
-  font-size: 15px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: 0.1em;
   padding: 0px;
   min-height: 5px;
-  min-width: 60px;
+  min-width: 50px;
   border-width: 2px;
+  margin-right: 8px;
 }
 .special-btn .btn:active,
 .btn:focus {
@@ -671,19 +672,20 @@ h4 {
 }
 
 .resume-item {
-  padding: 20px;
+  padding: 5px;
   background: #fff;
   -webkit-transition: 0.1s all ease;
   -o-transition: 0.1s all ease;
   transition: 0.1s all ease;
-  border: 4px solid transparent;
+  border: 2px solid transparent;
 }
 .resume-item:hover,
 .resume-item:focus {
-  border: 4px solid #ff9f55;
+  border: 2px solid #ff9f55;
   -webkit-box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.1);
   box-shadow: 0 10px 20px -10px rgba(0, 0, 0, 0.1);
 }
+
 .resume-item .date {
   display: block;
   margin-bottom: 10px;
