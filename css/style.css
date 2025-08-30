@@ -794,14 +794,13 @@ h4 {
   }
 }
 
-.profile-info h3 {
+/* .profile-info h3 {
   text-align: center;
   margin: 0.5em 0;
   color: #333;
   opacity: 0;
   transform: translateY(40px);
-  animation: slideUpText 1.3s ease-out forwards; /* Delay text animation until image is done */
-}
+  animation: slideUpText 1.3s ease-out forwards;
 
 @keyframes slideUpText {
   from {
@@ -812,11 +811,12 @@ h4 {
     opacity: 1;
     transform: translateY(0);
   }
-}
+} */
+
+/*
 
 .about-me h4 {
-  /*animation: slideInRight 1.4s ease-out forwards;*/
-  animation: growIn 1.3s ease-out forwards; /* Animation for growth effect */
+  animation: growIn 1.3s ease-out forwards; 
 }
 
 @keyframes slideInRight {
@@ -828,8 +828,20 @@ h4 {
     opacity: 1;
     transform: translateX(0);
   }
-}
+} */
 /*animated text*/
+
+
+
+.two-columns-bug-list {
+  columns: 2;           /* split into 2 columns */
+  -webkit-columns: 2;
+  -moz-columns: 2;
+  column-gap: 2rem;     /* spacing between columns */
+  list-style-position: inside;
+  padding-left: 0;
+}
+
 
 .site-footer {
   padding: 1em 0;

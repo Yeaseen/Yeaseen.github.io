@@ -36,6 +36,7 @@ plugins:
 
 # For development testing:
 #  bundle exec jekyll serve
+# goto: http://localhost:4000
 
 # Exclude from processing.
 # The following items will not be processed, by default.
