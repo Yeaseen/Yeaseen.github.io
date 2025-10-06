@@ -1,0 +1,30 @@
+---
+layout: page_layout
+---
+
+<section class="site-section bg-light" id="section-post">
+  <div class="container">
+    <div class="post-header text-center">
+      <h1 class="post-title">{{ page.title }}</h1>
+      <p class="post-meta">
+        <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%B %-d, %Y" }}</time>
+        {% if page.categories and page.categories != empty %}
+          · {% for c in page.categories %}<span class="cat">{{ c }}</span>{% unless forloop.last %}, {% endunless %}{% endfor %}
+        {% endif %}
+      </p>
+    </div>
+
+    <div>
+      {{ content }}
+    </div>
+
+    <nav class="post-nav">
+      {% if page.previous %}
+        <a class="btn-nav prev" href="{{ page.previous.url | relative_url }}">← {{ page.previous.title }}</a>
+      {% endif %}
+      {% if page.next %}
+        <a class="btn-nav next" href="{{ page.next.url | relative_url }}">{{ page.next.title }} →</a>
+      {% endif %}
+    </nav>
+  </div>
+</section>

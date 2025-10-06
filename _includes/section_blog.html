@@ -1,0 +1,28 @@
+<section class="site-section bg-light" id="section-blog">
+  <div class="container">
+    <div class="section-heading text-center">
+      <h2><strong>Blog</strong></h2>
+      <p class="section-subtitle">Latest posts & updates</p>
+    </div>
+
+    <ul class="blog-list">
+      {% for post in site.posts %}
+        <li class="blog-card">
+          <a class="blog-card-title" href="{{ post.url | relative_url }}">{{ post.title }}</a>
+          <div class="blog-card-meta">
+            <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %-d, %Y" }}</time>
+            {% if post.categories and post.categories != empty %}
+              · <span class="blog-card-cats">
+                {% for c in post.categories %}<span class="cat">{{ c }}</span>{% unless forloop.last %}{% endunless %}{% endfor %}
+              </span>
+            {% endif %}
+          </div>
+          <p class="blog-card-excerpt">
+            {{ post.excerpt | strip_html | truncate: 180 }}
+          </p>
+          <a class="blog-card-readmore" href="{{ post.url | relative_url }}">Read more →</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</section>

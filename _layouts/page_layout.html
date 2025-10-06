@@ -3,14 +3,27 @@
 <html lang="en">
   {% include head.html %}
   <body data-spy="scroll" data-target="#pb-navbar" data-offset="200">
-    {% include navbar.html %} {% if page.section == "home" %} {% include
-    section_home.html %} {% elsif page.section == "research" %} {% include
-    section_research.html %} {% elsif page.section == "activities" %} {% include
-    section_activities.html %} {% elsif page.section == "expertise" %} {%
-    include section_expertise.html %} {% elsif page.section == "projects" %} {%
-    include section_projects.html %} {% elsif page.section == "teaching" %} {%
-    include section_teaching.html %} {% elsif page.section == "career" %} {%
-    include section_career.html %} {% endif %} {% include footer.html %}
+    {% include navbar.html %}
+
+    {% if page.section == "home" %}
+      {% include section_home.html %}
+    {% elsif page.section == "research" %}
+      {% include section_research.html %}
+    {% elsif page.section == "activities" %}
+      {% include section_activities.html %}
+    {% elsif page.section == "expertise" %}
+      {% include section_expertise.html %}
+    {% elsif page.section == "projects" %}
+      {% include section_projects.html %}
+    {% elsif page.section == "teaching" %}
+      {% include section_teaching.html %}
+    {% elsif page.section == "career" %}
+      {% include section_career.html %}
+    {% elsif page.section == "blog" %}
+      {% include section_blog.html %}
+    {% endif %}
+
+    {{ content }}
 
     <script src="/js/vendor/popper.min.js"></script>
     <script src="/js/vendor/bootstrap.min.js"></script>

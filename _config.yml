@@ -26,6 +26,12 @@ baseurl: '' # the subpath of your site, e.g. /blog
 url: 'https://yeaseen.github.io' # the base hostname & protocol for your site, e.g. http://example.com
 github_username: Yeaseen
 
+permalink: /blog/:categories/:year/:month/:day/:title:output_ext
+markdown: kramdown
+highlighter: rouge
+kramdown:
+  input: GFM
+
 # Build settings
 theme: minima
 plugins:
