@@ -794,6 +794,11 @@ h4 {
   }
 }
 
+.profile-info h3 {
+  text-align: center;
+  margin: 0.5em 0;
+}
+
 /* .profile-info h3 {
   text-align: center;
   margin: 0.5em 0;
@@ -811,8 +816,7 @@ h4 {
     opacity: 1;
     transform: translateY(0);
   }
-} */
-
+} 
 /*
 
 .about-me h4 {
