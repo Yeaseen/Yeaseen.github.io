@@ -1,0 +1,205 @@
+
+/* sizing only—no colors */
+.markdown-body { 
+  background-color: white;
+  max-width: 1220px; 
+  margin: 0 auto; 
+  padding: 0 1rem 2rem; 
+  text-align: justify;
+  font-family: Verdana;
+  color: black;
+  font-size: 15px;
+  font-weight: 100;
+  line-height: 1.5;
+
+}
+/* --- Markdown heading sizes inside posts --- */
+.markdown-body h1 {
+  font-size: 1.75rem;   /* roughly 28px */
+  font-weight: 700;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.3rem;
+}
+
+.markdown-body h2 {
+  font-size: 1.4rem;    /* ~22px */
+  font-weight: 600;
+  margin-top: 1.75rem;
+  margin-bottom: 0.75rem;
+  border-bottom: 1px solid #e5e7eb;
+  padding-bottom: 0.25rem;
+}
+
+.markdown-body h3 {
+  font-size: 1.15rem;   /* ~18px */
+  font-weight: 600;
+  margin-top: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top: 1.25rem;
+  margin-bottom: 0.5rem;
+}
+
+/* keep anchor scroll offsets consistent */
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+  scroll-margin-top: 96px;
+}
+
+
+
+/* Single post */
+.post-header { margin-bottom:1.5rem; }
+.post-title { font-weight:800; margin-bottom:.25rem; }
+.post-meta { color:#8a8a8a; }
+
+
+
+/* === Clean, single-border code styling === */
+
+/* Fenced or highlighted code blocks */
+.markdown-body pre,
+.markdown-body .highlight,
+.markdown-body .highlighter-rouge pre {
+  background: #f6f8fa;
+  color: #1f2328;                     /* readable text */
+  border: 1px solid #e5e7eb;          /* single light border */
+  border-radius: 10px;
+  padding: 14px 16px;
+  margin: 0 0 1rem;
+  overflow-x: auto;
+  box-shadow: none;
+}
+
+/* Remove all nested borders/backgrounds */
+.markdown-body .highlight pre,
+.markdown-body pre code,
+.markdown-body .highlight code {
+  background: transparent !important;
+  border: none !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  color: inherit !important;
+  box-shadow: none !important;
+}
+
+/* Inline code (backticks) */
+.markdown-body :not(pre) > code {
+  background: #f6f8fa;
+  color: red;
+  border: 1px solid #e5e7eb;
+  border-radius: 6px;
+  padding: .15rem .35rem;
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+               "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace;
+  font-size: 0.92rem;
+  line-height: 1.5;
+}
+
+/* Code font for everything */
+.markdown-body pre code,
+.markdown-body code {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+               "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace;
+  font-size: 0.90rem;
+  line-height: 1.6;
+  font-feature-settings: "liga" 0, "calt" 0;
+}
+
+/* ===============================
+   Syntax highlighting (Rouge)
+   =============================== */
+
+
+
+/* --- Keywords (if, else, def, return, for, while, etc.) --- */
+.markdown-body pre code .k,
+.markdown-body pre code .kd,
+.markdown-body pre code .kn,
+.markdown-body pre code .kp,
+.markdown-body pre code .kr {
+  color: #cf222e;     /* red */
+  font-weight: 600;
+}
+
+/* --- Strings ("...", '...') --- */
+.markdown-body pre code .s,
+.markdown-body pre code .sb,
+.markdown-body pre code .sc,
+.markdown-body pre code .s1,
+.markdown-body pre code .s2 {
+  color: #0a3069;     /* deep blue */
+}
+
+/* --- Numbers --- */
+.markdown-body pre code .m,
+.markdown-body pre code .mf,
+.markdown-body pre code .mi,
+.markdown-body pre code .mh {
+  color: #0550ae;     /* soft blue */
+}
+
+/* --- Functions, method names --- */
+.markdown-body pre code .nf,
+.markdown-body pre code .fm {
+  color: #8250df;     /* purple */
+}
+
+/* --- Variables, parameters --- */
+.markdown-body pre code .n,
+.markdown-body pre code .nv {
+  color: #1a7f37;     /* green */
+}
+
+/* --- Class names / types --- */
+.markdown-body pre code .nc,
+.markdown-body pre code .nn,
+.markdown-body pre code .nt {
+  color: #953800;     /* brown/orange */
+  font-weight: 600;
+}
+
+/* --- Built-ins / constants (true, false, None, NULL, etc.) --- */
+.markdown-body pre code .kc,
+.markdown-body pre code .no {
+  color: #e36209;     /* orange */
+  font-weight: 500;
+}
+
+/* --- Comments (already defined but included for completeness) --- */
+.markdown-body pre code .c,
+.markdown-body pre code .cm,
+.markdown-body pre code .c1,
+.markdown-body pre code .cs {
+  color: #6e7781;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.post-nav {
+  display:flex; justify-content:space-between; align-items:center; gap:1rem;
+  margin-top:1.25rem; flex-wrap:wrap;
+}
+.btn-nav {
+  display:inline-block; padding:.6rem .9rem; border-radius:999px; border:1px solid #e5e7eb;
+  text-decoration:none; background:#fff; transition:box-shadow .15s ease, transform .15s ease;
+}
+.btn-nav:hover { box-shadow:0 6px 18px rgba(0,0,0,.07); transform:translateY(-1px); }
+.btn-nav.prev::before { content:""; }
+.btn-nav.next::after { content:""; }
+
+/* Keep headings from hiding under fixed navbar when linked */
+h1, h2, h3, h4, h5, h6 { scroll-margin-top: 96px; }
+
