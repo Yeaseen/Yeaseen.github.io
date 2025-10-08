@@ -1,9 +1,11 @@
 ---
 layout: post
 title:  "Linux Echo Beach"
-date:   2025-02-08 01:02:17 -0700
+date:   2024-01-01
 categories: linux commands
 ---
+
+## The Linux command Cheat Sheet you need
 
 All the following `Linux` commands emobody my experiecnes based on teaching, playing CTFs, ethical-hacking, and doing research on systems & secuirty. You are really a `supercalifragilisticexpialidocious` Linux user should you reach the last command.
 
