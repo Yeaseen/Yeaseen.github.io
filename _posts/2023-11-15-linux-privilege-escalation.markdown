@@ -1,8 +1,8 @@
 ---
 layout: post
 title:  "Linux Privilege Escalation"
-date:   2024-12-24
-categories: system-design geometry uber h3
+date:   2023-12-24
+categories: linux privilege 
 ---
 
 
