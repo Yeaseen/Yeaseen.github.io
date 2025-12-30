@@ -817,3 +817,74 @@ h4 {
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
 }
+
+
+/* Publication item styles */
+
+/* Scope everything to the publication block so other CSS can't mess with it */
+.resume-item .resume-pub {
+  font-family: Verdana, sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+
+  /* hard reset common “resume theme” interference */
+  font-style: normal;
+  font-weight: 400;
+  color: #1f2937;
+}
+
+.resume-item .resume-pub * {
+  font-style: normal;
+}
+
+.resume-item .resume-pub .pub-title {
+  font-weight: 700;
+  color: #111827;
+}
+
+.resume-item .resume-pub .pub-authors {
+  color: #374151;
+}
+
+.resume-item .resume-pub .pub-me {
+  font-weight: 400;        /* normal */
+  font-style: italic;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.resume-item .resume-pub .pub-venue {
+  color: #4b5563;
+}
+
+.resume-item .resume-pub .pub-details {
+  margin: 0;
+  color: #6b7280;
+}
+
+.resume-item .resume-pub .pub-links {
+  margin-top: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.resume-item .resume-pub .pub-chip {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+
+  border: 2px solid #0ea5b7;
+  border-radius: 999px;
+
+  text-decoration: none;
+  font-weight: 700;
+  letter-spacing: 0.2px;
+
+  color: #0ea5b7;
+  background: transparent;
+}
+
+.resume-item .resume-pub .pub-chip:hover {
+  background: rgba(14, 165, 183, 0.08);
+}
