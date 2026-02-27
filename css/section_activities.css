@@ -178,7 +178,7 @@
 /* Outreach: clamp height and enable scrolling */
 #section-activities .outreach-card .card-scroll {
   overflow-y: auto !important;
-  max-height: calc(1.5em * 8 + 1.4em); /* ~5 lines visible */
+  max-height: calc(1.5em * 6 + 1.4em); /* ~5 lines visible */
   padding-right: 12px;
 }
 
