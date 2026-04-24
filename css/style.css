@@ -738,9 +738,19 @@ h4 {
   }
 }
 
-.profile-info h3 {
+.profile-info h3,
+.profile-info h2 {
+  font-family: Verdana;
   text-align: center;
   margin: 0.5em 0;
+}
+
+#section-home .card {
+  background: #ffffff;
+  border-radius: 14px;
+  border: 1px solid rgba(17, 24, 39, 0.08);
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.06);
+  color: #1f2937;
 }
 
 /* .profile-info h3 {

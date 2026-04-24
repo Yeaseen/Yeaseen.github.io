@@ -86,7 +86,7 @@
   color: #9ca3af;
 }
 
-#section-activities strong {
+#section-activities .activities strong {
   color: #111827;
   font-weight: 700;
 }
