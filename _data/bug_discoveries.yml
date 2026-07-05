@@ -1,0 +1,64 @@
+- project: "C2Rust"
+  count: 15
+  url: "https://github.com/immunant/c2rust/issues?q=is%3Aissue+author%3AYeaseen"
+
+- project: "Go Compiler"
+  count: 1
+  url: "https://github.com/golang/go/issues/72844"
+
+- project: "CxGo"
+  count: 18
+  url: "https://github.com/gotranspile/cxgo/issues?q=is%3Aissue+author%3AYeaseen"
+
+- project: "Go2Hx"
+  count: 15
+  url: "https://github.com/go2hx/go2hx/issues?q=is%3Aissue+author%3AYeaseen"
+
+- project: "Tmux-Rs"
+  count: 11
+  url: "https://github.com/richardscollin/tmux-rs/issues?q=is%3Aissue+author%3AYeaseen"
+
+- project: "Port-Giflib"
+  count: 3
+  url: "https://github.com/safelibs/port-giflib/issues?q=is%3Aissue%20author%3AYeaseen"
+
+- project: "Port-Cjson"
+  count: 2
+  url: "https://github.com/safelibs/port-cjson/issues?q=is%3Aissue%20author%3AYeaseen"
+
+- project: "Port-Libjson"
+  count: 1
+  url: "https://github.com/safelibs/port-libjson/issues?q=is%3Aissue%20author%3AYeaseen"
+
+- project: "Port-Libyaml"
+  count: 1
+  url: "https://github.com/safelibs/port-libyaml/issues?q=is%3Aissue%20author%3AYeaseen"
+
+- project: "Zig Translate-C"
+  count: 12
+  url: "https://github.com/ziglang/zig/issues?q=is%3Aissue+author%3AYeaseen"
+
+- project: "SWC"
+  count: 10
+  url: "https://github.com/swc-project/swc/issues?q=is%3Aissue+author%3AYeaseen"
+
+
+- project: "TinyGo"
+  count: 3
+  url: "https://github.com/tinygo-org/tinygo/issues?q=is%3Aissue+author%3AYeaseen"
+
+- project: "C4Go"
+  count: 3
+  url: "https://github.com/Konstantin8105/c4go/issues?q=is%3Aissue+author%3AYeaseen"
+
+- project: "Babel"
+  count: 2
+  url: "https://github.com/babel/babel/issues?q=is%3Aissue+author%3AYeaseen"
+
+- project: "Polyglot"
+  count: 1
+  url: "https://github.com/s3team/Polyglot/issues?q=is%3Aissue+author%3AYeaseen"
+
+- project: "Latexify_py"
+  count: 1
+  url: "https://github.com/google/latexify_py/issues?q=is%3Aissue+author%3AYeaseen"

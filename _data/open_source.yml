@@ -1,0 +1,44 @@
+merged_prs:
+  - repo: "node"
+    description: "Fixed non-ASCII path handling in fs.rmSync"
+    prs:
+      - number: 61108
+        url: "https://github.com/nodejs/node/pull/61108"
+
+  - repo: "llvm-project"
+    description: "Making LLVM tests deterministic"
+    prs:
+      - number: 123889
+        url: "https://github.com/llvm/llvm-project/pull/123889"
+      - number: 125460
+        url: "https://github.com/llvm/llvm-project/pull/125460"
+      - number: 126811
+        url: "https://github.com/llvm/llvm-project/pull/126811"
+      - number: 127368
+        url: "https://github.com/llvm/llvm-project/pull/127368"
+      - number: 128272
+        url: "https://github.com/llvm/llvm-project/pull/128272"
+
+  - repo: "c2rust"
+    description: "Support for compound literals in enums/structs"
+    prs:
+      - number: 1185
+        url: "https://github.com/immunant/c2rust/pull/1185"
+      - number: 1188
+        url: "https://github.com/immunant/c2rust/pull/1188"
+
+  - repo: "Other fixes"
+    description: "Patched runtime-blocking bugs"
+    fixes:
+      - repo: "cxgo"
+        prs:
+          - number: 73
+            url: "https://github.com/gotranspile/cxgo/pull/73"
+      - repo: "Polyglot"
+        prs:
+          - number: 10
+            url: "https://github.com/s3team/Polyglot/pull/10"
+      - repo: "git2txt"
+        prs:
+          - number: 2
+            url: "https://github.com/ableinc/git2txt/pull/2"

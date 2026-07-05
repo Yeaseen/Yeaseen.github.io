@@ -97,51 +97,32 @@
               <li>
                 Merged PRs:
                 <ul class="list compact os-nested">
-                  <li>
-                    <span class="os-repo">node</span> — Fixed non-ASCII path handling in <code>fs.rmSync</code>:
-                    <span class="os-prs">
-                      <a href="https://github.com/nodejs/node/pull/61108" target="_blank" rel="noopener">#61108</a>
-                    </span>
-                  </li>
-                  <li>
-                    <span class="os-repo">llvm-project</span> — Making LLVM tests deterministic:
-                    <span class="os-prs">
-                      <a href="https://github.com/llvm/llvm-project/pull/123889" target="_blank" rel="noopener">#123889</a>,
-                      <a href="https://github.com/llvm/llvm-project/pull/125460" target="_blank" rel="noopener">#125460</a>,
-                      <a href="https://github.com/llvm/llvm-project/pull/126811" target="_blank" rel="noopener">#126811</a>,
-                      <a href="https://github.com/llvm/llvm-project/pull/127368" target="_blank" rel="noopener">#127368</a>,
-                      <a href="https://github.com/llvm/llvm-project/pull/128272" target="_blank" rel="noopener">#128272</a>
-                    </span>
-                  </li>
-
-                  <li>
-                    <span class="os-repo">c2rust</span> — Support for compound literals in enums/structs:
-                    <span class="os-prs">
-                      <a href="https://github.com/immunant/c2rust/pull/1185" target="_blank" rel="noopener">#1185</a>,
-                      <a href="https://github.com/immunant/c2rust/pull/1188" target="_blank" rel="noopener">#1188</a>
-                    </span>
-                  </li>
-
-                  <li>
-                    <span class="os-repo">Other fixes</span> — Patched runtime-blocking bugs:
-                    <span class="os-repo">cxgo</span>
-                    <span class="os-prs">
-                      (<a href="https://github.com/gotranspile/cxgo/pull/73" target="_blank" rel="noopener">#73</a>)
-                    </span>,
-                    <span class="os-repo">Polyglot</span>
-                    <span class="os-prs">
-                      (<a href="https://github.com/s3team/Polyglot/pull/10" target="_blank" rel="noopener">#10</a>)
-                    </span>,
-                    <span class="os-repo">git2txt</span>
-                    <span class="os-prs">
-                      (<a href="https://github.com/ableinc/git2txt/pull/2" target="_blank" rel="noopener">#2</a>)
-                    </span>
-                  </li>
+                  {% for contribution in site.data.open_source.merged_prs %}
+                    <li>
+                      <span class="os-repo">{{ contribution.repo }}</span> — {{ contribution.description }}:
+                      {% if contribution.prs %}
+                        <span class="os-prs">
+                          {% for pr in contribution.prs %}
+                            <a href="{{ pr.url }}" target="_blank" rel="noopener">#{{ pr.number }}</a>{% unless forloop.last %},{% endunless %}
+                          {% endfor %}
+                        </span>
+                      {% elsif contribution.fixes %}
+                        {% for fix in contribution.fixes %}
+                          <span class="os-repo">{{ fix.repo }}</span>
+                          <span class="os-prs">
+                            {% for pr in fix.prs %}
+                              (<a href="{{ pr.url }}" target="_blank" rel="noopener">#{{ pr.number }}</a>){% unless forloop.last %},{% endunless %}
+                            {% endfor %}
+                          </span>{% unless forloop.last %},{% endunless %}
+                        {% endfor %}
+                      {% endif %}
+                    </li>
+                  {% endfor %}
                 </ul>
               </li>
 
               <li>
-                <span style="color: red; font-weight: bold"><b>80+</b></span> bugs (new and developer-confirmed):
+                <span style="color: red; font-weight: bold"><b>99</b></span> bugs (new and developer-confirmed):
                 Details in
                 <a href="https://futures.cs.utah.edu/bugs/?search=Yeaseen" target="_blank" rel="noopener">
                   FuTURES<sup>3</sup> Lab's Bug Tracker
@@ -158,18 +139,12 @@
             <!-- Bug discoveries (VISIBLE) -->
             <h4 class="subheading">Bug Discoveries<span class="badge"><i class="fas fa-bug"></i></span></h4>
             <ul class="bug-grid">
-              <li><a href="https://github.com/immunant/c2rust/issues?q=is%3Aissue+author%3AYeaseen" target="_blank">C2Rust</a><span class="pill">15</span></li>
-              <li><a href="https://github.com/golang/go/issues/72844" target="_blank">Go Compiler</a><span class="pill">1</span></li>
-              <li><a href="https://github.com/gotranspile/cxgo/issues?q=is%3Aissue+author%3AYeaseen" target="_blank">CxGo</a><span class="pill">18</span></li>
-              <li><a href="https://github.com/go2hx/go2hx/issues?q=is%3Aissue+author%3AYeaseen" target="_blank">Go2Hx</a><span class="pill">15</span></li>
-              <li><a href="https://github.com/ziglang/zig/issues?q=is%3Aissue+author%3AYeaseen" target="_blank">Zig Translate-C</a><span class="pill">12</span></li>
-              <li><a href="https://github.com/swc-project/swc/issues?q=is%3Aissue+author%3AYeaseen" target="_blank">SWC</a><span class="pill">10</span></li>
-              <li><a href="https://github.com/richardscollin/tmux-rs/issues?q=is%3Aissue+author%3AYeaseen" target="_blank">Tmux-RS</a><span class="pill">6</span></li>
-              <li><a href="https://github.com/tinygo-org/tinygo/issues?q=is%3Aissue+author%3AYeaseen" target="_blank">TinyGo</a><span class="pill">3</span></li>
-              <li><a href="https://github.com/Konstantin8105/c4go/issues?q=is%3Aissue+author%3AYeaseen" target="_blank">C4Go</a><span class="pill">3</span></li>
-              <li><a href="https://github.com/babel/babel/issues?q=is%3Aissue+author%3AYeaseen" target="_blank">Babel</a><span class="pill">2</span></li>
-              <li><a href="https://github.com/s3team/Polyglot/issues?q=is%3Aissue+author%3AYeaseen" target="_blank">Polyglot</a><span class="pill">1</span></li>
-              <li><a href="https://github.com/google/latexify_py/issues?q=is%3Aissue+author%3AYeaseen" target="_blank">Latexify_py</a><span class="pill">1</span></li>
+              {% for bug_discovery in site.data.bug_discoveries %}
+                <li>
+                  <a href="{{ bug_discovery.url }}" target="_blank" rel="noopener">{{ bug_discovery.project }}</a>
+                  <span class="pill">{{ bug_discovery.count }}</span>
+                </li>
+              {% endfor %}
             </ul>
           </div>
 
