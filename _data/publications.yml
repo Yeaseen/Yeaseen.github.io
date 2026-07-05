@@ -1,0 +1,57 @@
+- title: "PROGnosticator: Testing Source-to-Source Code Translators via Construct-oriented Fuzzing."
+  authors:
+    - name: "Yeaseen Arafat"
+      me: true
+    - name: "Stefan Nagy"
+  venue: "ACM International Conference on the Foundations of Software Engineering"
+  venue_short: "FSE 2026"
+  venue_url: "https://conf.researchr.org/home/fse-2026"
+  links:
+    - label: "doi"
+      url: "https://doi.org/10.1145/3797135"
+    - label: "pdf"
+      url: "https://futures.cs.utah.edu/papers/26FSE-a.pdf"
+    - label: "slides"
+      url: "https://futures.cs.utah.edu/papers/26FSE-a_slides.pdf"
+    - label: "code"
+      url: "https://github.com/FuturesLab/PROGnosticator"
+
+- title: "TeTRIS: General-purpose Fuzzing for Translation Bugs in Source-to-Source Code Transpilers."
+  authors:
+    - name: "Yeaseen Arafat"
+      me: true
+    - name: "Stefan Nagy"
+  venue: "Annual Computer Security Applications Conference"
+  venue_short: "ACSAC 2025"
+  venue_url: "https://www.acsac.org/"
+  links:
+    - label: "doi"
+      url: "https://ieeexplore.ieee.org/document/11391838"
+    - label: "pdf"
+      url: "https://futures.cs.utah.edu/papers/25ACSAC.pdf"
+    - label: "slides"
+      url: "https://futures.cs.utah.edu/papers/25ACSAC_slides.pdf"
+    - label: "code"
+      url: "https://github.com/FuturesLab/TeTRIS"
+
+- title: "A Machine Learning based Approach for Protecting Wireless Networks Against DoS Attacks."
+  authors:
+    - name: "Yeaseen Arafat"
+      me: true
+    - name: "Kazi Samin Yeaser"
+    - name: "Ashikur Rahman"
+    - name: "Arnab Dasgupta"
+  venue: "International Conference on Networking Systems and Security"
+  venue_short: "NSysS 2020"
+  venue_url: "http://cse.buet.ac.bd/nsyss2020/"
+  links:
+    - label: "doi"
+      url: "https://dl.acm.org/doi/10.1145/3428363.3428377"
+    - label: "pdf"
+      url: "images/nsys20/NSysS_2020.pdf"
+    - label: "talk"
+      url: "https://youtu.be/BNUqSbfpMlk"
+    - label: "slides"
+      url: "images/nsys20/PID14.pdf"
+    - label: "code"
+      url: "https://github.com/Yeaseen/Networking_Simulator2_Project"

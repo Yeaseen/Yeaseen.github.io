@@ -1,0 +1,35 @@
+{% assign publication = include.publication %}
+
+<div class="card resume-item mb-2">
+  <div class="resume-pub">
+    <div class="pub-title">
+      {{ publication.title }}
+    </div>
+
+    <div class="pub-authors">
+      {% for author in publication.authors -%}
+        {%- if author.me -%}
+          <span class="pub-me">{{ author.name }}</span>
+        {%- else -%}
+          {{ author.name }}
+        {%- endif -%}
+        {%- unless forloop.last -%}
+          {%- if forloop.rindex == 2 -%}, and {% else %}, {% endif -%}
+        {%- endunless -%}
+      {%- endfor -%}.
+    </div>
+
+    <div class="pub-venue">
+      {{ publication.venue }}
+      (<a href="{{ publication.venue_url }}" target="_blank" rel="noopener">{{ publication.venue_short }}</a>).
+
+      <span class="special-btn" style="display: inline">
+        {% for link in publication.links %}
+          <a href="{{ link.url }}" target="_blank" rel="noopener">
+            <button type="button" class="btn btn-outline-info">{{ link.label }}</button>
+          </a>
+        {% endfor %}
+      </span>
+    </div>
+  </div>
+</div>
