@@ -1,11 +1,13 @@
 merged_prs:
-  - repo: "node"
-    description: "Fixed non-ASCII path handling in fs.rmSync"
+  - repo: "Node.js"
+    description: "Fixed non-ASCII path handling and error reporting in fs.rmSync"
     prs:
       - number: 61108
         url: "https://github.com/nodejs/node/pull/61108"
+      - number: 61233
+        url: "https://github.com/nodejs/node/pull/61233"
 
-  - repo: "llvm-project"
+  - repo: "LLVM"
     description: "Making LLVM tests deterministic"
     prs:
       - number: 123889
@@ -19,7 +21,7 @@ merged_prs:
       - number: 128272
         url: "https://github.com/llvm/llvm-project/pull/128272"
 
-  - repo: "c2rust"
+  - repo: "C2Rust"
     description: "Support for compound literals in enums/structs"
     prs:
       - number: 1185
@@ -28,9 +30,13 @@ merged_prs:
         url: "https://github.com/immunant/c2rust/pull/1188"
 
   - repo: "Other fixes"
-    description: "Patched runtime-blocking bugs"
+    description: "Patched bugs and vulnerabilities"
     fixes:
-      - repo: "cxgo"
+      - repo: "libyang"
+        prs:
+          - number: 2565
+            url: "https://github.com/CESNET/libyang/pull/2565"
+      - repo: "CxGo"
         prs:
           - number: 73
             url: "https://github.com/gotranspile/cxgo/pull/73"

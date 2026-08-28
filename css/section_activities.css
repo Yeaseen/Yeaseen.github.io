@@ -62,6 +62,10 @@
   color: #111827;
 }
 
+#section-activities .security-heading {
+  font-weight: 400;
+}
+
 /* --- lists --- */
 #section-activities .list {
   margin: 0;

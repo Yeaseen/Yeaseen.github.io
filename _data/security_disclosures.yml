@@ -1,0 +1,19 @@
+- project: "libyang"
+  description: "Discovered two published vulnerabilities"
+  links:
+    - label: "GHSA-jq97-j23h-2vqw"
+      url: "https://github.com/CESNET/libyang/security/advisories/GHSA-jq97-j23h-2vqw"
+    - label: "GHSA-g4fc-jhgv-f3pc"
+      url: "https://github.com/CESNET/libyang/security/advisories/GHSA-g4fc-jhgv-f3pc"
+
+- project: "libarchive"
+  description: "Discovered a confirmed vulnerability"
+  links:
+    - label: "Issue #3417"
+      url: "https://github.com/libarchive/libarchive/issues/3417"
+
+- project: "Mobile banking app"
+  description: "Discovered a critical hard-coded key-exposure vulnerability"
+  links:
+    - label: "Details"
+      url: "https://github.com/Yeaseen/vuln_discovery_0"
