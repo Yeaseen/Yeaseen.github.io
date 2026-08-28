@@ -8,7 +8,7 @@
 
         <div class="activities">
           <!-- Outreach -->
-          <div class="card outreach-card">
+          <!-- <div class="card outreach-card">
             <h3 class="card-title">News</h3>
 
             <div class="card-scroll">
@@ -16,17 +16,17 @@
                 {% include activities_news_items/news_items.html %}
               </ul>
             </div>
-          </div>
+          </div> -->
 
         
 
           <!-- Open Source -->
           <div class="card">
-            <h3 class="card-title">Open Source Contributions</h3>
+            <h3 class="subheading">Open Source Contributions</h3>
 
             <ul class="list compact os-block">
               <li>
-                Merged upstream PRs:
+                Merged upstream PRs:  
                 <ul class="list compact os-nested">
                   {% for contribution in site.data.open_source.merged_prs %}
                     <li>
@@ -62,7 +62,7 @@
 
             </ul>
 
-            <h4 class="subheading security-heading">Security Findings &amp; Disclosures<span class="badge"><i class="fas fa-shield-alt"></i></span></h4>
+            <h3 class="subheading">Security Findings &amp; Disclosures<span class="badge"><i class="fas fa-shield-alt"></i></span></h3>
             <ul class="list compact">
               {% for disclosure in site.data.security_disclosures %}
                 <li>
@@ -76,7 +76,7 @@
           
 
             <!-- Bug discoveries (VISIBLE) -->
-            <h4 class="subheading">Bug Discoveries<span class="badge"><i class="fas fa-bug"></i></span></h4>
+            <h3 class="subheading">Bug Discoveries<span class="badge"><i class="fas fa-bug"></i></span></h3>
             <ul class="bug-grid">
               {% for bug_discovery in site.data.bug_discoveries %}
                 <li>
